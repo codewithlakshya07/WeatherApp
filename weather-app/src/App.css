@@ -1,0 +1,136 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.search button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white; /* Make it pure white for contrast */
+  color: #333;        /* Dark text for readability */
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #0077b6; /* Cool highlight color */
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+/* Backgrounds for different weather */
+.app.sunny {
+  background: linear-gradient(to bottom, #ffe259, #ffa751);
+}
+
+.app.cloudy {
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+
+.app.rainy {
+  background: linear-gradient(to bottom, #4b79a1, #283e51);
+}
+
+.app.snowy {
+  background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+}
+
+.app.default {
+  background: #e0f7fa;
+}
+/* Dark mode toggle button */
+.dark-toggle {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-toggle:hover {
+  background-color: #333;
+}
+
+/* Dark mode styles */
+.app.dark {
+  background-color: #121212 !important;
+  color: #f0f0f0;
+}
+
+.app.dark input,
+.app.dark button {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.app.dark .weather-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid #333;
+}
+.unit-toggle {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.unit-toggle:hover {
+  background-color: #666;
+}
